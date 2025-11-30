@@ -58,6 +58,9 @@ method.invoke(object);
 
 **Особенности:** Поддерживает вызов private методов через `setAccessible(true)`
 
+
+![Img](https://github.com/MineMoon/JavaLab6/blob/main/PNGFR/Invoke1.png)
+
 ## Аннотация @Default
 
 ### Назначение
@@ -90,6 +93,9 @@ if (def != null) {
 
 **Особенности:** Работает как на уровне класса, так и на уровне полей
 
+
+![Img](https://github.com/MineMoon/JavaLab6/blob/main/PNGFR/Default1.png)
+
 ## Аннотация @ToString
 
 ### Назначение
@@ -118,6 +124,9 @@ result.append(field.getName()).append(" = ").append(field.get(object)).append(",
 
 **Особенности:** Поддерживает режимы YES/NO для полей и классов (включать/не включать)
 
+
+![Img](https://github.com/MineMoon/JavaLab6/blob/main/PNGFR/ToString1.png)
+
 ## Аннотация @Validate
 
 ### Назначение
@@ -143,6 +152,9 @@ for (Class<?> tempClass : classes) {
 3. **Форматирование вывода** - построение читаемого списка классов
 
 **Особенности:** Автоматически удаляет дубликаты, сохраняет порядок элементов
+
+
+![Img](https://github.com/MineMoon/JavaLab6/blob/main/PNGFR/Validate1.png)
 
 ## Аннотация @Two
 
@@ -182,6 +194,8 @@ return new Pair<>(str, num);
 - **Сохранение информации о типах** - строгая типизация сохраняется через generics
 - **Информативный вывод** - подробное сообщение при отсутствии аннотации
 
+
+![Img](https://github.com/MineMoon/JavaLab6/blob/main/PNGFR/Two1.png)
 ## Аннотация @Cache
 
 ### Назначение
@@ -207,6 +221,9 @@ for (String area : cacheAreas) {
 3. **Форматированный вывод** - отображение списка областей
 
 **Особенности:** Автоматическая очистка от некорректных значений
+
+
+![Img](https://github.com/MineMoon/JavaLab6/blob/main/PNGFR/Cache1.png)
 
 # Тестирование
 
@@ -293,6 +310,9 @@ class ClassValidateEmptyTest {
 }
 ```
 - Специальный класс для тестирования обработки пустого массива
+
+
+![Img](https://github.com/MineMoon/JavaLab6/blob/main/PNGFR/ProcessorValidateTest1.png)
 
 ## Тестирование аннотации @ToString
 
@@ -392,6 +412,9 @@ class ClassToStringNoMode {
 }
 ```
 - Демонстрирует поведение при глобальном отключении toString для класса
+
+
+![Img](https://github.com/MineMoon/JavaLab6/blob/main/PNGFR/ProcessToStringTest1.png)
 
 ## Интеграционное тестирование
 
